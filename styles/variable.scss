@@ -20,7 +20,7 @@ $gridColGap: 30px;
   content: "";
   background-color: $color;
   height: $height + px;
-  z-index: 0;
+  z-index: -1;
 }
 
 @mixin circleHalf($width, $border, $color) {
