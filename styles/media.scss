@@ -1,0 +1,322 @@
+@import "variable";
+
+@media only screen and (max-width: 1410px){
+  .header__container {
+    width: 1024px;
+  }
+  .header__pills {
+    left: calc((100vw - 1410px) / 2 + 300px);
+  }
+  .header__inner--circle {
+    left: -30px;
+    top: 140px;
+    @include circleHalf(520, 25, #fff);
+    &--in {
+      @include circleHalf(495, 20, transparent);
+      transform: rotate(0);
+      &--transparent {
+        position: relative;
+        width: 425px;
+        height: 425px;
+        border-radius: 50%;
+        background: url("../images/background-header-inner.png") no-repeat center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  body {
+    overflow-x: hidden; /* Обрезаем все, что не помещается в область */
+  }
+  .header__container .legs {
+    width: 600px;
+  }
+
+  .header__complex--form {
+    position: fixed;
+    top: 140px;
+    right: -270px;
+    transition: .5s cubic-bezier(.74,.84,.84,.08);
+  }
+  .active {
+    right: 30px;
+    transition: .5s cubic-bezier(.74,.84,.84,.08);
+  }
+  .offer {
+    display: flex;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border: 7px solid #e8edc9;
+    right: 20px;
+    top: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: $green;
+    border-radius: 50%;
+    z-index: 4;
+    cursor: pointer;
+    svg {
+      width: 40px;
+      height: 40px;
+      fill: #fff;
+    }
+  }
+  .header__service {
+    align-items: start;
+  }
+  .header__container {
+    display: block;
+  }
+  .header__properties {
+    min-width: 400px;
+    &-about {
+      flex-direction: column;
+      align-items: start;
+      img {
+        display: none;
+      }
+    }
+
+  }
+  .header__properties-about--text {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .container {
+    width: 968px;
+  }
+  .features__steps,
+  .effects__grid,
+  .effects-benefits__grid
+  {
+    grid-template-columns: repeat(3, 300px);
+  }
+  .header__container .legs {
+    top: -200px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .header {
+    min-height: 620px;
+    &__container {
+      width: 760px;
+    }
+    &__inner--circle {
+      left: -30px;
+      top: 140px;
+      @include circleHalf(350, 15, #fff);
+      &--in {
+        @include circleHalf(320, 10, transparent);
+        transform: rotate(0);
+        &--transparent {
+          position: relative;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          background: url("../images/background-header-inner.png") no-repeat center;
+          -webkit-background-size: cover;
+          background-size: cover;
+          transform: rotate(45deg);
+        }
+      }
+    }
+    &__pills {
+      top: 100%;
+    }
+    &__properties {
+      min-width: 200px;
+      padding-right: 10px;
+      padding-bottom: 240px;
+      &-about {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        img {
+          display: block;
+          margin-bottom: 25px;
+        }
+      }
+    }
+    &__complex {
+      display: none;
+    }
+  }
+
+  .header__container .legs {
+    width: 410px;
+    height: 430px;
+    left: -100px;
+  }
+  .container {
+    width: 760px;
+  }
+  .features {
+    margin-top: 180px;
+
+  }
+  .features__steps--block--img-text .circle {
+    @include circleHalf(120, 5, #ec9a6a);
+    position: absolute;
+    transform: rotate(0);
+    border-top-right-radius: 125px;
+    .img {
+      border-radius: 50%;
+      margin-right: 20px;
+      height: 90px;
+      width: 90px;
+      border: 10px solid #ffffff;
+    }
+  }
+  .features__steps--block:nth-child(2) .circle {
+    border: 5px solid #e47643;
+  }
+  .features__steps--block:nth-child(3) .circle {
+    border: 5px solid #e47643;
+  }
+  .features__steps--block--img-text .text {
+    top: 40px;
+  }
+  .features__steps, .effects__grid, .effects-benefits__grid {
+    grid-template-columns: repeat(3, 200px);
+  }
+  .effects__grid--block {
+    padding: 60px 10px;
+  }
+  .effects-benefits__grid--block {
+    padding: 80px 10px 10px 10px;
+  }
+  .effects-benefits .price {
+    margin: 0 50px;
+  }
+  .use__usage--img .pills-large {
+    height: 200px;
+    width: 280px;
+  }
+  .use__usage--img .glass {
+    width: 170px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header__container,
+  .container {
+    width: 90%;
+    padding: auto;
+  }
+
+  .header__properties {
+    padding-left: 100px;
+    z-index: 2;
+    &-about img {
+      margin-bottom: 10px;
+    }
+  }
+  .header__properties {
+    padding-left: 0;
+  }
+  .header__pills {
+    left: 0;
+    top: 0;
+  }
+  .header__properties-about {
+    margin-left: 10px;
+  }
+  .header__properties {
+    min-width: 160px;
+  }
+  .features__steps--block--img-text .text {
+    text-align: center;
+    left: 0;
+  }
+  .effects {
+    padding: 90px 0 45px;
+  }
+  .features {
+    margin-top: 100px;
+    padding: 40px 0 80px;
+  }
+  .header__complex {
+    display: none;
+  }
+  .header__logo {
+    width: 100%;
+    margin-left: 135px;
+    margin-right: 0;
+  }
+  .header__logo--text {
+    display: none;
+  }
+  .offer {
+    left: 20px;
+  }
+  .header__pills {
+    top: 100%;
+  }
+  .header__pills--large {
+    width: 230px;
+    height: 180px;
+  }
+  .header__pills--medium {
+    width: 249px;
+    height: 110px;
+  }
+  .header__pills .bush {
+    width: 190px;
+    height: 130px;
+  }
+.header__pills--clear {
+  left: 0;
+  width: 100px;
+  height: 50px;
+}
+.header__pills--small {
+  position: absolute;
+  bottom: -30px;
+  left: 150px;
+  width: 180px;
+  height: 85px;
+}
+  .features__steps, .effects__grid, .effects-benefits__grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .effects__grid--block {
+    margin-bottom: 20px;
+  }
+  .statistics {
+    padding: 20px 40px;
+  }
+  .effects-benefits__grid--block {
+    margin-bottom: 70px;
+  }
+  .effects-benefits .price {
+    margin: 0;
+  }
+  .use__usage--img {
+    display: none;
+  }
+  .use__usage--list {
+    width: 95%;
+  }
+  .header__complex--form {
+    top: 15px;
+  }
+  .header__container .legs {
+    height: 470px;
+  }
+  .header__pills {
+    left: 60px;
+    top: 95%;
+  }
+
+}
+@media only screen and (max-width: 425px) {
+  .header__properties-about {
+    visibility: hidden;
+  }
+}

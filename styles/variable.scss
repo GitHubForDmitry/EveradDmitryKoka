@@ -1,0 +1,58 @@
+$orange: #ff6b00;
+$green: #a7c93d;
+$yellow: #ffc002;
+$lightblue: #eef8f9;
+$textSilver: #6f6f70;
+$textBlack: #383334;
+$header-container-width: 1410px;
+$gridBlock: 370px;
+$gridColGap: 30px;
+@mixin fontFamily($font, $fs, $mb){
+  margin-bottom: $mb + px;
+  font-family: "Roboto-#{$font}", sans-serif;
+  font-size: $fs + px;
+}
+@mixin underline($color, $height){
+  position: absolute;
+  top: calc(100% - 4px);
+  left: 0;
+  width: 100%;
+  content: "";
+  background-color: $color;
+  height: $height + px;
+  z-index: 0;
+}
+
+@mixin circleHalf($width, $border, $color) {
+  position: absolute;
+  width: $width + px;
+  height: ($width / 2 + 2) + px;
+  border-top-left-radius: ($width + $border) + px;
+  border-top-right-radius: ($width + $border) + px;
+  border: ($border + px) solid $color;
+  border-bottom: 0;
+  transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@mixin line($width, $height, $bgc) {
+  &::before {
+    position: absolute;
+    content: "";
+    width: $width + px;
+    height: $height + px;
+    background-color: $bgc;
+    top: -23px;
+    left: 0;
+  }
+}
+@mixin menu($top, $width) {
+  position: absolute;
+  top: $top + px;
+  left: 5px;
+  width: $width + px;
+  height: 3px;
+  background-color: #fff;
+  transition: .3s;
+}
