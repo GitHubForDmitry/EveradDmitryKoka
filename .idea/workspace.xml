@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c558e7ae-2b78-4224-8d6c-5dcb889b5efe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/media.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="637" column="8" lean-forward="true" selection-start-line="637" selection-start-column="8" selection-end-line="637" selection-end-column="13" />
+            <state relative-caret-position="275">
+              <caret line="579" selection-start-line="579" selection-end-line="579" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -79,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/media.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="337" column="4" selection-start-line="337" selection-start-column="4" selection-end-line="337" selection-end-column="28" />
+            <state relative-caret-position="339">
+              <caret line="346" column="3" selection-start-line="346" selection-start-column="3" selection-end-line="346" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -186,12 +184,12 @@
       <option name="presentableId" value="Default" />
       <updated>1568234156628</updated>
       <workItem from="1568234157861" duration="4764000" />
-      <workItem from="1568260836207" duration="6028000" />
+      <workItem from="1568260836207" duration="6653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10792000" />
+    <option name="totallyTimeSpent" value="11417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -262,15 +260,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="637" column="8" lean-forward="true" selection-start-line="637" selection-start-column="8" selection-end-line="637" selection-end-column="13" />
+        <state relative-caret-position="275">
+          <caret line="579" selection-start-line="579" selection-end-line="579" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/media.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="337" column="4" selection-start-line="337" selection-start-column="4" selection-end-line="337" selection-end-column="28" />
+        <state relative-caret-position="339">
+          <caret line="346" column="3" selection-start-line="346" selection-start-column="3" selection-end-line="346" selection-end-column="3" />
         </state>
       </provider>
     </entry>

@@ -35,12 +35,12 @@
 
   .header__complex--form {
     position: fixed;
-    top: 140px;
+    top: 40px;
     right: -270px;
     transition: .5s cubic-bezier(.74,.84,.84,.08);
   }
   .active {
-    right: 30px;
+    right: 90px;
     transition: .5s cubic-bezier(.74,.84,.84,.08);
   }
   .offer {
@@ -165,11 +165,15 @@
   }
   .features {
     margin-top: 0;
+    padding: 85px 0 130px;
     .text {
       align-self: flex-start;
       left: 0;
       text-align: center;
     }
+  }
+  .wave {
+    top: calc(100% - 60px);
   }
   .features__steps--block--img-text .circle {
     @include circleHalf(120, 5, #ec9a6a);
@@ -337,6 +341,9 @@
   .use__usage--list {
     width: auto;
     margin: 0 auto;
+  }
+  .wave {
+    top: calc(100% - 15px);
   }
 }
 @media only screen and (max-width: 425px) {
