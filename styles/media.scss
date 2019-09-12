@@ -102,6 +102,9 @@
   .features__text {
     font-size: 23px;
   }
+  .effects-benefits__grid--text-about {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -135,7 +138,7 @@
     &__properties {
       min-width: 200px;
       padding-right: 10px;
-      padding-bottom: 240px;
+      padding-bottom: 285px;
       &-about {
         flex-direction: column;
         align-items: center;
@@ -161,8 +164,12 @@
     width: 760px;
   }
   .features {
-    margin-top: 180px;
-
+    margin-top: 0;
+    .text {
+      align-self: flex-start;
+      left: 0;
+      text-align: center;
+    }
   }
   .features__steps--block--img-text .circle {
     @include circleHalf(120, 5, #ec9a6a);
@@ -176,6 +183,7 @@
       width: 90px;
       border: 10px solid #ffffff;
     }
+
   }
   .features__steps--block:nth-child(2) .circle {
     border: 5px solid #e47643;
@@ -184,7 +192,7 @@
     border: 5px solid #e47643;
   }
   .features__steps--block--img-text .text {
-    top: 40px;
+    top: 50%;
   }
   .features__steps, .effects-benefits__grid {
     grid-template-columns: repeat(3, 200px);
@@ -195,6 +203,7 @@
   }
   .effects__grid--block {
     padding: 60px 10px;
+    margin-bottom: 20px;
   }
   .effects-benefits__grid--block {
     padding: 80px 10px 10px 10px;
@@ -255,7 +264,6 @@
   }
   .header__logo {
     width: 100%;
-    margin-left: 135px;
     margin-right: 0;
   }
   .header__logo--text {
@@ -302,7 +310,7 @@
     padding: 20px 40px;
   }
   .effects-benefits__grid--block {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
   .effects-benefits .price {
     margin: 0;
@@ -326,7 +334,10 @@
   .features__steps--block--text {
     margin: 0 auto 20px;
   }
-
+  .use__usage--list {
+    width: auto;
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 425px) {
   .header__properties-about {

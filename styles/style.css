@@ -110,7 +110,7 @@ html {
 }
 .header__pills {
   position: absolute;
-  top: calc(100% + 80px);
+  top: calc(100% + 50px);
   left: calc((100vw - 1410px) / 2 + 150px);
   width: inherit;
   height: inherit;
@@ -309,7 +309,7 @@ html {
   position: relative;
   width: 60px;
   height: 60px;
-  margin-right: 17px;
+  margin-right: 5px;
   border: 7px solid #e8edc9;
   border-radius: 50%;
   background-color: #a7c93d;
@@ -371,7 +371,7 @@ html {
   top: -31px;
 }
 .header__complex--stage--text {
-  max-width: 305px;
+  max-width: 290px;
   margin-bottom: 0px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 20px;
@@ -571,10 +571,9 @@ html {
   border: 5px solid #ffc002;
   border-radius: 50px;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .header__complex--form .form__submit--button {
-  padding: 3px 0;
   width: 100%;
   color: #383334;
   border: 1px solid #ffd44e;
@@ -590,7 +589,7 @@ html {
   font-weight: 900;
 }
 .header__complex--form .form__submit--text {
-  margin-bottom: 0px;
+  margin-bottom: 8px;
   font-family: "Roboto-Bold", sans-serif;
   font-size: 16px;
   font-weight: 900;
@@ -1346,6 +1345,10 @@ html {
   .features__text {
     font-size: 23px;
   }
+
+  .effects-benefits__grid--text-about {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 1023px) {
   .header {
@@ -1399,7 +1402,7 @@ html {
   .header__properties {
     min-width: 200px;
     padding-right: 10px;
-    padding-bottom: 240px;
+    padding-bottom: 285px;
   }
   .header__properties-about {
     flex-direction: column;
@@ -1426,7 +1429,12 @@ html {
   }
 
   .features {
-    margin-top: 180px;
+    margin-top: 0;
+  }
+  .features .text {
+    align-self: flex-start;
+    left: 0;
+    text-align: center;
   }
 
   .features__steps--block--img-text .circle {
@@ -1462,7 +1470,7 @@ html {
   }
 
   .features__steps--block--img-text .text {
-    top: 40px;
+    top: 50%;
   }
 
   .features__steps, .effects-benefits__grid {
@@ -1476,6 +1484,7 @@ html {
 
   .effects__grid--block {
     padding: 60px 10px;
+    margin-bottom: 20px;
   }
 
   .effects-benefits__grid--block {
@@ -1548,7 +1557,6 @@ html {
 
   .header__logo {
     width: 100%;
-    margin-left: 135px;
     margin-right: 0;
   }
 
@@ -1607,7 +1615,7 @@ html {
   }
 
   .effects-benefits__grid--block {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 
   .effects-benefits .price {
@@ -1637,6 +1645,11 @@ html {
 
   .features__steps--block--text {
     margin: 0 auto 20px;
+  }
+
+  .use__usage--list {
+    width: auto;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 425px) {

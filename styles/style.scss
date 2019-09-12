@@ -88,7 +88,7 @@ html {
   }
   &__pills {
     position: absolute;
-    top: calc(100% + 80px);
+    top: calc(100% + 50px);
     left: calc((100vw - #{$header-container-width}) / 2 + 150px);
     width: inherit;
     height: inherit;
@@ -261,7 +261,7 @@ html {
           position: relative;
           width: 60px;
           height: 60px;
-          margin-right: 17px;
+          margin-right: 5px;
           border: 7px solid #e8edc9;
           border-radius: 50%;
           background-color: $green;
@@ -332,7 +332,7 @@ html {
         }
       }
       &--text {
-        max-width: 305px;
+        max-width: 290px;
         @include fontFamily(Regular, 20, 0);
         color: $textSilver;
         font-weight: 500;
@@ -509,9 +509,8 @@ html {
           border: 5px solid $yellow;
           border-radius: 50px;
           cursor: pointer;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
           &--button {
-            padding: 3px 0;
             width: 100%;
             color: $textBlack;
             border: 1px solid #ffd44e;
@@ -525,7 +524,7 @@ html {
             font-weight: 900;
           }
           &--text {
-            @include fontFamily(Bold, 16, 0);
+            @include fontFamily(Bold, 16, 8);
             font-weight: 900;
           }
         }
